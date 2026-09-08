@@ -7,12 +7,10 @@ NetSpy is a dependency-free Python 3 command-line utility that identifies the ho
 ## Live demo output
 
 [![NetSpy GitHub Pages deployment](https://github.com/Volinipriya06/NetSpy/actions/workflows/deploy-pages.yml/badge.svg)](https://volinipriya06.github.io/NetSpy/docs/)
-[![Run NetSpy demo](https://github.com/Volinipriya06/NetSpy/actions/workflows/demo-output.yml/badge.svg)](https://github.com/Volinipriya06/NetSpy/actions/workflows/demo-output.yml)
 
 - **Live portfolio demo:** [volinipriya06.github.io/NetSpy/docs](https://volinipriya06.github.io/NetSpy/docs/)
-- **Reproducible command-line output:** [GitHub Actions demo run](https://github.com/Volinipriya06/NetSpy/actions/workflows/demo-output.yml)
 
-The live page is an interactive presentation of captured authorized loopback output. The command-line tool performs real network scans only when run locally. The workflow runs NetSpy against the runner's authorized loopback target (`127.0.0.1`); open a completed run and download the **netspy-demo-output** artifact to view the captured terminal output.
+The live page is an interactive presentation of captured authorized loopback output. The command-line tool performs real network scans only when run locally.
 
 ## Overview
 
