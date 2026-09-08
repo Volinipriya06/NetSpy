@@ -4,6 +4,12 @@ NetSpy is a dependency-free Python 3 command-line utility that identifies the ho
 
 > **Authorization required:** Scan only systems you own or have explicit permission to assess. A port scan can trigger monitoring alerts and may violate policy or law without authorization.
 
+## Live demo output
+
+[![Run NetSpy demo](https://github.com/Volinipriya06/NetSpy/actions/workflows/demo-output.yml/badge.svg)](https://github.com/Volinipriya06/NetSpy/actions/workflows/demo-output.yml)
+
+The badge links to a GitHub Actions workflow that runs NetSpy against the runner's authorized loopback target (`127.0.0.1`). Open a completed run and download the **netspy-demo-output** artifact to view the captured terminal output. GitHub cannot execute a local-network scan inside the README itself; the command-line tool must run on the machine or CI runner performing the scan.
+
 ## Overview
 
 The default target is the detected local IPv4 address. Pass a hostname or IPv4 address to scan an explicitly selected target. NetSpy checks TCP ports `21`, `22`, `23`, `25`, `80`, `135`, `443`, `445`, and `3389`, including common FTP, SSH, Telnet, SMTP, web, Windows RPC/SMB, and RDP services.
