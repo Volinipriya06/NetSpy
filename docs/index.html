@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="NetSpy portfolio demonstration and command-line output viewer.">
+    <title>NetSpy | Network Discovery Utility</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <nav aria-label="Primary navigation">
+        <a class="brand" href="#top" aria-label="NetSpy home">NET<span>SPY</span></a>
+        <div class="nav-links">
+          <a href="https://github.com/Volinipriya06/NetSpy">Source code</a>
+          <a href="https://github.com/Volinipriya06/NetSpy/actions/workflows/demo-output.yml">CI output</a>
+        </div>
+      </nav>
+
+      <section class="hero" id="top">
+        <p class="eyebrow">Python · TCP sockets · Concurrent scanning</p>
+        <h1>See NetSpy<br><em>in action.</em></h1>
+        <p class="intro">A local-network discovery utility built with Python's standard library. This web page is an interactive portfolio demo of a captured, authorized loopback scan.</p>
+        <div class="hero-actions">
+          <button id="run-demo" type="button">Run demo output <span aria-hidden="true">→</span></button>
+          <a class="secondary-action" href="#run-locally">Run it locally</a>
+        </div>
+      </section>
+
+      <section class="terminal-section" aria-labelledby="demo-heading">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Interactive demo</p>
+            <h2 id="demo-heading">Authorized loopback scan</h2>
+          </div>
+          <span class="status"><i></i> DEMO MODE</span>
+        </div>
+        <div class="terminal" aria-live="polite">
+          <div class="terminal-bar"><span></span><span></span><span></span><p>netspy — terminal</p></div>
+          <pre id="terminal-output">$ python netspy.py 127.0.0.1
+
+Press “Run demo output” to replay a captured scan.</pre>
+        </div>
+        <p class="terminal-note">This browser demo does not scan your device or network. View the <a href="https://github.com/Volinipriya06/NetSpy/actions/workflows/demo-output.yml">GitHub Actions run</a> for reproducible CI output.</p>
+      </section>
+
+      <section class="features" aria-label="NetSpy features">
+        <article><p class="feature-number">01</p><h3>Route-aware discovery</h3><p>Uses a UDP route probe to identify the host's outbound IPv4 address without transmitting discovery traffic.</p></article>
+        <article><p class="feature-number">02</p><h3>Concurrent TCP checks</h3><p>Native Python threads scan nine common service ports concurrently with a strict 1.0-second timeout.</p></article>
+        <article><p class="feature-number">03</p><h3>Clean evidence</h3><p>Produces a concise summary of elapsed time, ports scanned, and every endpoint that accepted a TCP connection.</p></article>
+      </section>
+
+      <section class="local-run" id="run-locally">
+        <p class="eyebrow">Your machine, your authorized target</p>
+        <h2>Run the real scanner locally.</h2>
+        <p>The CLI performs the actual local network discovery and TCP checks. Use it only on systems you own or are authorized to test.</p>
+        <div class="command"><code>python netspy.py 127.0.0.1</code><button id="copy-command" type="button" aria-label="Copy command">Copy</button></div>
+      </section>
+
+      <footer>NETSPY · Local Network &amp; Port Discovery Utility · <a href="https://github.com/Volinipriya06/NetSpy">GitHub</a></footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
